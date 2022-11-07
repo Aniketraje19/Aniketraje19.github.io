@@ -138,11 +138,12 @@ nav ul li:hover a {
 }
 
 .car-img {
-    height: 420px;
-    width: 600px;
+    height: 500px;
+    width: 700px;
     transform: translate(0px);
     animation: car 4s ease-out;
 }
+
 
 @keyframes car {
 
@@ -215,18 +216,33 @@ footer img {
 }
 
 .model-img {
-    /* border: 2px solid red; */
+    /* border: 2px solid white; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 200px;
     /* margin-bottom: 50px; */
+}
+
+.model-img button{
+    height: 50px;
+    width: 50px;
+    margin: 0px 10px;
+    border-radius: 50px;
+    outline: 1px solid red;
+}
+.model-img button:active{
+    background: rgb(124, 124, 110);
+    outline: 2px solid rgb(124, 124, 110);
+    outline-offset: 2px;
 }
 
 .model-img img {
     height: 350px;
     width: 500px;
     transition: all 1s ease;
+    /* filter:invert(); */
     /* border: 2px solid white; */
 }
 
